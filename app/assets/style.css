@@ -1,10 +1,25 @@
+/* definición de colores */
+
+:root{
+  --first-color:#753900;
+  --second-color:#F9BE76;
+  --background-main:#FCF1DA;
+  --background-footer:#977B60;
+  --gray-color:#ccc;
+  --text-color-black:#000;
+  --text-color-white:#FFF;
+  --text-color-subtitle:#333;
+  --shades-back: 0px 0px 7px 2px rgba(0, 0, 0, .2);
+  --text-shades:4px 4px 5px rgba(0, 0, 0, 0.9);
+}
+
 *,
 *:before,
 *:after{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  color: #FFF;
- font-family: 'Poppins',
+  font-family: 'Poppins',
  sans-serif;
 }
 
@@ -15,84 +30,321 @@ html{
   box-sizing: inherit;
   overflow-x: hidden;
 }
-.header {
+
+/* *********************************** */
+
+.layer-dark {
+  background: rgba(0, 0, 0, .6);
+  position: absolute;
+  top: 0;
+  max-width: 1200vh;
+  height: 100vh;
+  width: 100%;
+  z-index: 997;
+
+}
+
+.button {
+  text-align: center;
+  margin: .2rem auto;
+  color: #FFF;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  border: none;
   background-color: #753900;
-  height: 5rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.1rem;
 }
-.headerElements{
- display: flex;
+
+
+
+
+
+form{
+ background-color: var(--background-main); 
+ padding: 1rem .7rem;
+ margin-bottom: 1rem;
+
+
+}
+
+
+.form input {
+  margin-bottom: .8rem;
+  width: 18rem;
+  height: 2.4rem;
+  border: 1px solid #f3f3f3;
+}
+ .form select{
+  width: 18rem;
+  height: 2.4rem;
+  margin-bottom: .8rem;
+  padding-left: 1rem;
+  border: 1px solid #f3f3f3;
+  color:grey;
+ }
+.form button{
+  position: absolute;
+  bottom: 0;
+}
+
+
+footer {
+  background-color: #977B60;
+  color: #fff;
+  width: 100%;
+  height: 6rem;
+  position: fixed;
+  bottom: 0rem;
+  z-index: 999;
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-left: 16px;
-  margin-right: 16px;  
+
+
+} 
+
+
+.footer-title {
+  color: #F9BE76;
+  font-size: 9px;
+  margin: .3rem .3rem;
 }
 
-.logo{
-  width: 118px;
-  height:auto;
+.footer-info {
+ display: block; 
+  color: #FFF;
+  font-size: 7px;
+  font-weight: lighter;
+  text-align: left;
+  margin-top: .2rem;
 
+}
+
+footer .legal{
+  height: 2rem;
+  width: 100%;
+  background-color: #F9BE76;
+  display: flex;
+  position: absolute;
+  bottom: 0; 
+  font-size: 8px;
+  font-weight: lighter;
+  padding: .1rem 1.7rem;
+}
+
+
+.header {
+  position: fixed;
+  top:0;
+  z-index: 999;
+  background-color: #753900;
+  width: 100%;     
+  height: 5rem;
+  box-shadow: 0px 0px 7px 2px rgba(0,0,0, .2);
+
+}
+.header-panel{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.header-logo img {
+  width: 100px;
+  height:auto;
+  margin-left: 16px;
+  margin-top: 8px; 
+}
+.header-ico-btn{
+  outline: none;
+  border:none;
+}
+
+
+.header-nav{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-main);
+    margin-top: 5rem;
+    position: absolute;
+    top:0;
+    bottom:0;
+    z-index: 998;
+    text-align: center;
+    width: 100%;
+    height: 568px;
+}
+.header-nav a:hover{
+   color:#fff;
+   background: #753900;
+}
+
+.header-nav > .item-link {
+  border: thin solid #FFF;
+  line-height: 4rem;
+  color: var(--first-color);
+}
+
+.header-panel.is-active {
+  display: block;
+  visibility: visible;
+}
+
+h1 {
+  margin: 0;
+  color: #FFF;
+  font-size: 2.3rem;
+  z-index: 998;
+  text-align: center;
+ text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.9);
+
+}
+
+h2 {
+  margin: 0;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text-color-subtitle);
+
+}
+h3{
+    margin: 0;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+h5{
+  font-size: .8rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+#home {
+  background-image: url("../assets/cartagenaHero.jpg");
+  background-size: 150vmax;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFF;
+}
+
+#inmuebles{
+    background-image: url("../assets/casa.jpg");
+    background-size: 200%;
+    background-size: 150vmax;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFF;
+}
+
+#inmuebles p{
+  font-size: 1.2rem;
+  color:#fff;
+ margin: 1rem 0;
+}
+
+.is-hidden {
+  display: none;
+}
+
+#nosotros {
+  background-color: var(--background-main);
+}
+
+#nosotros p,
+#contacto p {
+  margin: .5rem 1rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 7rem;
+
+}
+
+
+
+.services {
+  width: 100%;
+  height: 260px;
+  background-color: var(--background-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, .2);
+  margin-bottom: 1rem;
+
+}
+
+.services-icons img {
+  width: 32px;
+  height: auto;
 }
 
 span.hamburger-inner::after,
 span.hamburger-inner::before,
-span.hamburger-inner
-{
+span.hamburger-inner {
   background: #FFF;
 }
 
-
-.contenido{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-image: url("/app/assets/cartagenaHero.jpg"); 
-   max-width: 100%;
-   height: 488px;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: right;
-
-
-}
-.box-title{
-margin-left: 16px;
-margin-right: 16px;
-
-}
-.title{
-  font-size: 36px;
-  font-weight: 500;
+.testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-
-}
-.menu{
-    display: flex;
-    flex-direction: column;
-    background-color:#FCF1DA;
-    margin-top: 5rem;
-    position: absolute;
-    top:0;
-     bottom:0;
-     text-align: center;
-     width: 100%;
-    height: 568px;
-}
-.menu a:hover{
-   color:#fff;
-   background: #753900;
-}
-.item-link {
-  border: thin solid #FFF;
-  line-height: 5rem;
-  color:#753900;
+  background-color: var(--background-main);
+  height: 250px;  
+   margin-bottom: 1rem; 
 }
 
-.is-hidden{
-  display: none;
-}
-
-.panel.is-active {
-  display: block;
- visibility:visible;
+.testimony p{
+  padding-bottom: 2rem;
+    font-size: .7rem;
+  font-style: oblique;
+    margin: .5rem 1rem;
 
 }
+
+.testimony span{
+  font-weight: bold;
+}
+
+.testimony small{
+  line-height:1 ;
+     font-size: .7rem;
+}
+
+textarea {
+border: 1px solid #f3f3f3;
+width: 18rem;
+height: 3rem;
+padding-bottom: 5rem;
+overflow-y: hidden;
+color:grey;
+
+
+}
+
+[placeholder]{
+  font-family:'Poppins';
+ padding-left: 1rem;
+
+}
+
+
+
+
+

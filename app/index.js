@@ -1,6 +1,10 @@
-import {App} from './App.js';
+/* import {App} from './App.js'; */
 import {hamburgerMenu} from './helpers/hamburgerMenu.js';
-document.addEventListener("DOMContentLoaded", App);
+document.addEventListener("DOMContentLoaded", e=>{
 
-hamburgerMenu(".panel-btn",".panel", ".menu a");
+hamburgerMenu(".header-ico-btn",".header-nav");
+
+})
+
+
 

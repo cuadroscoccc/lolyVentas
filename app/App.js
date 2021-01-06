@@ -1,13 +1,11 @@
-import {Header} from './components/Header.js';
-import {Content} from './components/Content.js';
+/* import {Header} from './components/Header.js';
+import {Content} from './components/Main.js';
 import {Router} from './components/Router.js';
+
+
 export function App() {
-  const $root = document.getElementById("root");
-  const $content = document.getElementById("content") 
-  $root.appendChild(Header());
-  $content.appendChild(Content());
+  const $header = document.querySelector(".header");
+  const $footer = document.getElementById(".footer") 
 
 
-  Router();
-
-}
+} */
