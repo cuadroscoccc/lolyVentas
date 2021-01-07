@@ -45,31 +45,24 @@ html{
 }
 
 .button {
+  display: inline;
   text-align: center;
-  margin: .2rem auto;
   color: #FFF;
-  padding: .5rem 1rem;
+  padding: .5rem 2rem;
   border-radius: 10px;
   border: none;
   background-color: #753900;
   cursor: pointer;
   outline: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
-
-
-
 
 
 form{
  background-color: var(--background-main); 
  padding: 1rem .7rem;
  margin-bottom: 1rem;
-
-
 }
-
-
 .form input {
   margin-bottom: .8rem;
   width: 18rem;
@@ -89,7 +82,6 @@ form{
   bottom: 0;
 }
 
-
 footer {
   background-color: #977B60;
   color: #fff;
@@ -101,9 +93,7 @@ footer {
   display: flex;
   justify-content: space-between;
 
-
 } 
-
 
 .footer-title {
   color: #F9BE76;
@@ -118,9 +108,16 @@ footer {
   font-weight: lighter;
   text-align: left;
   margin-top: .2rem;
-
 }
 
+footer input{
+  width: 10rem;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, .1);
+  font-size: 10px;
+  color: #FFF;
+}
 footer .legal{
   height: 2rem;
   width: 100%;
@@ -159,7 +156,6 @@ footer .legal{
   outline: none;
   border:none;
 }
-
 
 .header-nav{
     display: flex;
@@ -248,7 +244,7 @@ h5{
 #inmuebles p{
   font-size: 1.2rem;
   color:#fff;
- margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .is-hidden {
@@ -260,7 +256,7 @@ h5{
 }
 
 #nosotros p,
-#contacto p {
+#contacto p{
   margin: .5rem 1rem;
 }
 
@@ -270,10 +266,7 @@ h5{
   align-items: center;
   min-height: 100vh;
   padding-bottom: 7rem;
-
 }
-
-
 
 .services {
   width: 100%;
@@ -307,15 +300,14 @@ span.hamburger-inner {
   text-align: center;
   background-color: var(--background-main);
   height: 250px;  
-   margin-bottom: 1rem; 
+  margin-bottom: 1rem; 
 }
 
 .testimony p{
   padding-bottom: 2rem;
-    font-size: .7rem;
+  font-size: .7rem;
   font-style: oblique;
-    margin: .5rem 1rem;
-
+  margin: .5rem 1rem;
 }
 
 .testimony span{
@@ -324,27 +316,158 @@ span.hamburger-inner {
 
 .testimony small{
   line-height:1 ;
-     font-size: .7rem;
+  font-size: .7rem;
 }
 
 textarea {
-border: 1px solid #f3f3f3;
-width: 18rem;
-height: 3rem;
-padding-bottom: 5rem;
-overflow-y: hidden;
-color:grey;
-
-
+  border: 1px solid #f3f3f3;
+  width: 18rem;
+  height: 3rem;
+  padding-bottom: 5rem;
+  overflow-y: hidden;
+  color:grey;
 }
 
 [placeholder]{
   font-family:'Poppins';
- padding-left: 1rem;
+  padding-left: 1rem;
+  
 
+}
+
+/*  */
+
+#link-inmuebles{
+background-image: url("../assets/logo-lolyventas.svg");
+background-position: center;
+background-repeat: no-repeat;
+background-size:45vmax;
+}
+
+.buttons{
+  position: relative; 
+  top:17rem;
+
+}
+
+/* Arriendos */
+.arriendos{
+
+
+}
+.header-panel-center{
+text-align: center; 
+}
+
+.header-logo-center img {
+  width: 6rem;
+  height: auto;
+  margin: .5rem 0;
+
+}
+
+.banner{
+ background-image: url("../assets/banner.jpg");
+ background-size: 100vmax;
+ background-repeat: no-repeat;
+ background-position: center;
+ height: 7rem;
+ box-shadow:var(--shades-back);
+
+}
+
+.banner h2{
+  padding-top: 1.6rem;
+  color:#fff;
+ text-shadow: var(--text-shades);
+
+}
+.filter-container{
+  background-color: var(--background-main);
+  height: 5rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+ 
+}
+
+.filter-text{
+  text-align: center;
+  margin: 1.4rem 0;
+}
+
+  .filter-item{
+  display: flex; 
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  margin: 0 2rem;
+  border-radius: 15px;
+  
+}
+ 
+.dropdown{
+  text-align: center;
+  margin: 1rem;
+}
+.btn-secondary{
+  background-color: var(--first-color);
+  outline: none !important;
+  border: none !important;
+  width: 50%;
 }
 
 
 
+.card{
+display: flex;
+align-items: center;
+border: none;
+margin-bottom: 8rem;
+  
+}
+.card article{
+ margin-left: 1rem;
+ margin-right: 1rem;
+
+}
+.card figure{
+    max-width: 100%;
+    height: 18rem; 
+    background-color: var(--background-main);
+    box-shadow: var(--shades-back);
+}
+
+.card img{
+ max-width: 100%;
+ width: 18rem;
+}
+
+.card p{
+  text-align: center;
+  margin-bottom: -.1rem;
+}
 
 
+ .carousel-title h2{
+margin-bottom: 0;
+} 
+
+.detalle{
+   min-height: 150vh;
+   height: 180vh;
+}
+.information{
+  background-color: var(--background-main);
+  padding-bottom: 1rem;
+  box-shadow: var(--shades-back);
+}
+.feacture{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.information li{
+  padding-left: 0;
+  margin-left: 1rem;
+}
